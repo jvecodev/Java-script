@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial, sans-serif;
-    background-color: #027c7c;
+    background: url(../gym.jpg)  ;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -40,7 +40,7 @@ body{
     border: 1px solid rgba(112, 112, 112, 0.082);
     padding: 10px;
     text-align: start;
-    font-size: large;
+    font-size: normal;
 }
 .container table .numeros{
     text-align: end;
@@ -56,7 +56,7 @@ body{
 }
 
 .container form input{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.144);
@@ -71,7 +71,7 @@ body{
     cursor: pointer;
     font-size: large;
     display: flex;
-    margin-top: 10px;
+    
     justify-content: center;
     margin: 0 auto;
 
