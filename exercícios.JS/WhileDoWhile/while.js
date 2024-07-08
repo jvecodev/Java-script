@@ -30,20 +30,37 @@
 //     console.log(count);
 // }
 
-function random(min, max){
-    let r = Math.random() * (max - min) + min;
-    return parseInt(r.toFixed());
-    //return Math.floor(r);  // Não use esse comando
-}
+// function random(min, max){
+//     let r = Math.random() * (max - min) + min;
+//     return parseInt(r.toFixed());
+//     //return Math.floor(r);  // Não use esse comando
+// }
 
-const min = 1;
-const max = 6;
-let rand = random(min, max);
+// const min = 1;
+// const max = 6;
+// let rand = random(min, max);
 
-while(rand !== 10){
-    rand = random(min , max);
-    console.log(rand);
-}
+// while(rand !== 10){
+//     rand = random(min , max);
+//     console.log(rand);
+// }
+
+
+// do{
+//     rand = random(min, max);
+//     console.log(rand);
+// }   while(rand !== 10);
+
+let numeroSecreto = 7;
+let chute;
+
+//neste caso se o usuraio errar, nao precisa declarar o prompt novamente dentro do loop while 
+do {
+    chute = prompt("Adivinhe o número secreto (entre 1 e 10):");
+} while (chute != numeroSecreto);
+
+alert("Parabéns! Você adivinhou o número secreto.");
+
 
 
 //DO WHILE checa a condição depois de executar o bloco de código
