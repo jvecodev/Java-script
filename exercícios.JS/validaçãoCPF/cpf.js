@@ -6,13 +6,15 @@ function validaCPF(cpf) {
 
     // Verifica se o CPF tem 11 dígitos
     if (cpf.length !== 11) {
-        console.log("CPF inválido");
+        alert("CPF inválido");
+
         return;
     }
 
     // Verifica se todos os dígitos são iguais
     if (/^(\d)\1{10}$/.test(cpf)) {
         alert("CPF inválido");
+
         return;
     }
 
