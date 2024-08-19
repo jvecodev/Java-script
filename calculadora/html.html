@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo/Aprendizado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <main class="calc">
+        <h1>Calculadora</h1>
+        <table class="calculadora">
+          <tr>
+            <td colspan="4"><input type="text" class="display"></td>
+          </tr>
+          <tr>
+            <td><button  id="btn-clear" >C</button></td>
+            <td><button class="btn">(</button></td>
+            <td><button class="btn">)</button></td>
+            <td><button  id="divisao" > ÷</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">7</button></td>
+            <td><button class="btn">8</button></td>
+            <td><button class="btn">9</button></td>
+            <td><button  id="multiplicacao" > x </button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">4</button></td>
+            <td><button class="btn">5</button></td>
+            <td><button class="btn">6</button></td>
+            <td><button  id="adicao" >+</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">1</button></td>
+            <td><button class="btn">2</button></td>
+            <td><button class="btn">3</button></td>
+            <td><button  id="subtracao">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">.</button></td>
+            <td><button class="btn">0</button></td>
+            <td><button  id="btn-del" >&laquo;</button></td>
+            <td><button  id="equal" onclick="historicoCalculo()" >=</button></td>
+          </tr>
+        </table>
+    </main>
+    <main class="historico">
+        <h1>Histórico</h1>
+        <div class="historicocalc">
+        
+        </div>
+          
+
+    </main>
+
+  </section>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

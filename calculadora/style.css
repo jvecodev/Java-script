@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(233, 233, 233);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+  max-width: 840px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+flex-direction: row;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: lighter;
+ 
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.historico{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0px 50px 0px 50px;
+
+}
+
+.historico h1{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  margin-bottom: 32px;
+}
+
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #858585;
+  border-radius: 5px;
+  
+}
+
+.calculadora {
+  width: 400px;
+}
+
+.display {
+  font-size: 2em;
+  width: 100%;
+  text-align: right;
+}
+
+.btn, #adicao, #subtracao, #multiplicacao, #divisao, #equal, #btn-clear, #btn-del{
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  border: none;
+  background: #dfdfdf;
+  cursor: pointer;
+}
+
+.btn:hover, #adicao:hover, #subtracao:hover, #multiplicacao:hover, #divisao:hover, #equal:hover, #btn-clear:hover, #btn-del:hover {
+  background: #ff0000;
+}
