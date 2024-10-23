@@ -3,7 +3,7 @@ function Pessoa (nome, sobrenome){
     this.sobrenome = sobrenome;
 
     this.metodo = function(){
-        console.log(this.nome + ': sou um método');
+        console.log(this.nome + this.sobrenome +': sou um método');
     }
 }
 
@@ -13,4 +13,5 @@ const p2 = new Pessoa('Maria', 'Julia.');
 //Para chamar o método
 p1.metodo();
 p2.metodo();
+
 
