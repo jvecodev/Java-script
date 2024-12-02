@@ -8,6 +8,7 @@
 //     }
     
 // }
+// // a funcao Math.random() gera um numero aleatorio entre 0 e 1/são valores psdeualeatorios, por isso multiplicamos por 100 para obter um numero inteiro
 // const numero1 = Math.floor(Math.random() * 100);
 // const numero2 = Math.floor(Math.random() * 100);
 // maiorMenor(numero1, numero2);
@@ -15,35 +16,35 @@
 
 // Paisagem ou retrato / Operaçoes ternarias
 
-// function paisagem(altura, largura) {
-//     const tipo = altura > largura ? 'retrato' : 'paisagem';   
-//     console.log( `H${altura} x L${largura}`);
-//     console.log(tipo);
-// }
+function paisagem(altura, largura) {
+    const tipo = altura > largura ? 'retrato' : 'paisagem';   
+    console.log( `H${altura} x L${largura}`);
+    console.log(tipo);
+}
 
-// const altura = Math.floor(Math.random() * 100);
-// const largura = Math.floor(Math.random() * 100);
-// paisagem(altura, largura);
+const altura = Math.floor(Math.random() * 100);
+const largura = Math.floor(Math.random() * 100);
+paisagem(altura, largura);
 
 // FizzBuzz
 
-function fizzBuzz() {
-    for (let indice = 0; indice <= 100; indice++) {
-        if (indice % 3 === 0 ){
-            console.log(`${indice} Fizz`);
-        }
-        else if (indice % 5 === 0) {
-            console.log(`${indice} Buzz`);
-        }
-        else if (indice % 3 === 0 && indice % 5 === 0) {
-            console.log(`${indice} FizzBuzz`);
-        }
-        else {
-            console.log(indice, indice);
-        }
-    }
-}
+// function fizzBuzz() {
+//     for (let indice = 0; indice <= 100; indice++) {
+//         if (indice % 3 === 0 ){
+//             console.log(`${indice} Fizz`);
+//         }
+//         else if (indice % 5 === 0) {
+//             console.log(`${indice} Buzz`);
+//         }
+//         else if (indice % 3 === 0 && indice % 5 === 0) {
+//             console.log(`${indice} FizzBuzz`);
+//         }
+//         else {
+//             console.log(indice, indice);
+//         }
+//     }
+// }
 
-fizzBuzz();
+// fizzBuzz();
 
 

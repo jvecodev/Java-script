@@ -4,7 +4,7 @@ const texto = document.getElementById('textojs');
 
 //Quando eu quero unir um texto com o HTMl preciso utilizar o += para concatenar
 numeroDigitado.innerHTML = numero;
-
+// neste exemplo temos uma variavel chamada texto que recebe o id da div onde queremos inserir o conteudo, diferentemente da questao 8)
 texto.innerHTML += `<p>Raiz quadrada: ${numero ** 0.5}.</p>`;
 texto.innerHTML += `<p>O texto não é número? ${Number.isNaN(numero)}.</p>`;
 texto.innerHTML += `<p>${numero} é inteiro? ${Number.isInteger(numero)}.</p>`;

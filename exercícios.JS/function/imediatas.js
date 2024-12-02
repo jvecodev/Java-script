@@ -4,6 +4,7 @@
 // Sem tocar o escopo global
 //Desta forma eu protejo meu codigo de ser acessado por outros scripts
 //Aqui está um exemplo de uma IIFE:
+//Faço isso para substituir a declaração de uma função no final de um codigo por exemplo
 
 (function(){
     console.log('Será executado na hora!')

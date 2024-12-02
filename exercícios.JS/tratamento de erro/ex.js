@@ -4,7 +4,7 @@ function Soma (x,y){
     }
     return x + y;
 }
-                                                                                //→ Neste caso o throw não será executado, pelo fato  de existir no catch um console.log que irá imprimir a mensagem de erro, e o programa não irá parar de executar.
+ //→ Neste caso o throw não será executado, pelo fato  de existir no catch um console.log que irá imprimir a mensagem de erro, e o programa não irá parar de executar.
                                                                                 
 try{
     console.log(Soma(1,2)); 
