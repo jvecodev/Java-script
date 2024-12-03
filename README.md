@@ -1,4 +1,4 @@
-<h1>  JS    <img src="https://skillicons.dev/icons?i=nodejs,javascript,html,css" /> </h1>
+<h1>  <img src="https://skillicons.dev/icons?i=nodejs,javascript,html,css" /> </h1>
 
 Este repositório reúne meus estudos em JavaScript, incluindo exercícios, projetos e anotações sobre a linguagem que impulsiona a web!
 
