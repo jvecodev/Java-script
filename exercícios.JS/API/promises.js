@@ -1,40 +1,44 @@
+//sintaxe Basica
+//Resolve: Usado para retornar algo quando a operacao for bem-sucedida
+//Reject: Usado para retornar algo quando a operacao for mal-sucedida
+//ambos entram como parametro
 
-function esperaAi(msg, tempo){
+const minhaPromise = new Promise((resolve, reject) => {
+    const sucesso = true; 
     
-    //Estamos chamando o construtor da promise
-    // Precisamos resolver ou rejeitar esta promessa 
-    return new Promise((resolve, reject) => {
-        if (typeof msg !== 'string'){
-            reject(' Valor não identificado')
-        }
-        setTimeout(() => {
-        // recebe um parâmetro unico
-        resolve(msg);
-    },tempo);
-});
-    
-}
+    if (sucesso) {
+      resolve("Operação concluída com sucesso!");
+    } else {
+      reject("Algo deu errado.");
+    }
+  });
 
-function aleatorio (min, max){
-    return Math.floor(Math.random() * (max - min) + min);
-}
 
-esperaAi('Conexao com o BD',aleatorio(1, 3000))
-    .then(resposta => {
-        console.log(resposta)
-        // aqui eu retornei uma promise 
-        return esperaAi('Buscando BD', aleatorio(1,3000))
-    }).then(resposta => {
-        console.log(resposta)
-        return esperaAi(333333, aleatorio(1,3000))
-    }).then(resposta =>{
-        console.log(resposta)
-        
-    }).then(() => {
-        console.log('Exibe dados na tela')
-    }) 
-    .catch(e => {
-        console.log('ERRO' + e)
+
+// acompanhado entao, com o metodo que checam erros 
+// "resultado" servira como parametro do metodo then
+
+minhaPromise
+    .then((resultado) => {
+        console.log ("Sucesso", resultado);
+    })
+    .catch((e) => {
+        console.log ("Erro",e )
+    })
+    .finnally(() =>  {
+        console.log("Fim da execução")
     });
 
-console.log('Isso será exibido antes de qualquer outro codigo, pois o JS não espera para executar nada, ele executa antes das promessas')
+
+// exemplos com API
+fetch('https://api.exemplo.com/dados') //`fetch` retorna uma Promise
+.then((response) => response.json()) //converte a resposta em JSON
+.then((dados) => {
+  console.log("Dados recebidos:", dados);
+})
+.catch((erro) => {
+  console.error("Erro ao buscar dados:", erro);
+})
+.finally(()=>{
+    console.log("Fim da execução")
+})
